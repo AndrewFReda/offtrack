@@ -8,4 +8,4 @@ development:
   encoding: unicode
   database: offtrack_development
   pool: 5
-  password:
+  password: vagrant
