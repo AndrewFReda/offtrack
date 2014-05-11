@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
 
+  def container
+
+  end
+
   def new
     respond_to do |format|
       format.html {}

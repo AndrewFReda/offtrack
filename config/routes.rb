@@ -3,7 +3,8 @@ OffTrack::Application.routes.draw do
   match 'auth/failure', to: redirect('/'), via: [:get, :post]
   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
-  root 'users#new'
+  root 'users#container'
+  resources :users
 
   scope 'bets' do
     get 'proposed' => 'bets#proposed'
