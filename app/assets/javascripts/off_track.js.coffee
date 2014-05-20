@@ -8,9 +8,14 @@ window.OffTrack =
     Backbone.history.start()
 
   swapInMyBets: ->
-    view = new OffTrack.Views.MyBets()
+    collection = new OffTrack.Collections.Bets()
+    view = new OffTrack.Views.MyBets({
+      collection: collection
+    })
     view.setElement($('#container'))
+    view.collection.fetch()
     view.render()
+    
 
 $(document).ready ->
   OffTrack.initialize()

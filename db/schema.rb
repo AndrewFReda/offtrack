@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140508232056) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "bets", force: true do |t|
     t.string   "currency"
     t.float    "quantity"

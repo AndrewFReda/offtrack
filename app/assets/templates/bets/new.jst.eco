@@ -1,0 +1,9 @@
+<h2> New bet form </h2>
+
+<form name="input" action="/bets.json" method="post">
+  opponent_id: <input type="text" name="bet[opponent_id]"><br>
+  currency: <input type="text" name="bet[currency]"><br>
+  quantity: <input type="text" name="bet[quantity]"><br>
+  description: <input type="text" name="bet[description]"><br>
+  <input type="submit" value="Submit"><br>
+</form>
