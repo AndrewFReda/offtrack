@@ -1,6 +1,3 @@
 <h1> hey </h1>
 
-<form action="blah" method="get">
-  <input type="hidden" value="your mother" />
-  <button type="submit" name="make a thing">Hey bitch </button>
-</form>
+<button id="swap-in-my-bets"> Swap in My Bets </button>
