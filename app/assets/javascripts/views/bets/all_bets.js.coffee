@@ -2,12 +2,15 @@ class OffTrack.Views.AllBets extends Backbone.View
 
   template: JST['bets/all']
 
-  initialize: ->
-    this.collection.on('sync', 'render')
+  _initialize: ->
+    view = this
+    this.collection.fetch({
+      success: (collection, response) -> 
+        view.render()
+    })
 
   render: ->
     console.log(this.collection)
-    # debugger
     bets = this.collection.models
     @$el.html(@template({bets:bets}))
     this

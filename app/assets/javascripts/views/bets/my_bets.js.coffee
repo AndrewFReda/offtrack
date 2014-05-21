@@ -13,8 +13,8 @@ class OffTrack.Views.MyBets extends Backbone.View
     view = new OffTrack.Views.AllBets({
       collection: collection
     })
-    view.collection.fetch()
     view.setElement('#all-bets')
+    view._initialize()
 
   renderNewBetForm: ->
     view = new OffTrack.Views.NewBet()
